@@ -12,6 +12,8 @@ const DASHIBASE_CONFIG:Config = {
       page_id: "my_page",
       table_id: "my_table",
       mode: "list",
+      order: "value",
+      order_asc: true,
       attributes: [
         {
           id: "value",

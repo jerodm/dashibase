@@ -20,6 +20,8 @@ export interface Page {
   page_id: string; // View ID, used for the URL
   table_id: string; // Name of the Supabase table
   mode: string; // One of ['single', 'list', 'card']
+  order: string; // Column used for sort order
+  order_asc: boolean; // Whether the sort order is ascending
   readonly: boolean; // Whether this page is read-only
   attributes: Array<Attribute> // Which columns/attributes to show to the user
 }

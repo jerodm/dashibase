@@ -161,6 +161,7 @@ export function initCrud (loading:WritableComputedRef<boolean>, page:Page, maxIt
         .select(page.attributes.map((attribute:any) => attribute.id).join(',') + ',id', { count: 'exact' })
         .eq('user', store.user.id)
         .range(0, max - 1)
+        .order(page.order, { ascending: page.order_asc })
         loading.value = false
       if (error) {
         warning.value = error.message
