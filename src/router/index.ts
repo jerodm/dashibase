@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router"
 import Main from "@/components/Main.vue"
 import SignUp from "@/components/dashboard/SignUp.vue"
 import SignIn from "@/components/dashboard/SignIn.vue"
+import ResetPassword from "@/components/dashboard/ResetPassword.vue"
 import CreateItem from "@/components/dashboard/CreateItem.vue"
 import ViewItem from "@/components/dashboard/ViewItem.vue"
 import ViewContainer from "@/components/dashboard/ViewContainer.vue"
@@ -42,6 +43,11 @@ const routes = [
     path: "/signin",
     name: "Sign In",
     component: SignIn,
+  }, {
+    path: "/resetpassword",
+    name: "Reset Password",
+    component: ResetPassword,
+    props: true,
   },
 ]
 
